@@ -15,9 +15,9 @@ class ImcinputActivity : AppCompatActivity() {
 
         btnResultImc.setOnClickListener {
             if(!isEmpty(edtAlt) && !isEmpty(edtPeso)){
-                val peso = edtPeso.text.toString().toDouble()
-                val altura = edtAlt.text.toString().toDouble()
-                val resultado = String.format("%.2f", peso/(altura * altura)).toDouble()
+                val peso = edtPeso.text.toString().toFloat()
+                val altura = edtAlt.text.toString().toFloat()
+                val resultado = String.format("%.2f", peso/(altura * altura))
                 val transportresult = "$resultado"
                 startActivity(Intent(this@ImcinputActivity, ImcresultActivity::class.java).apply{
                     putExtra("resultado", transportresult)
