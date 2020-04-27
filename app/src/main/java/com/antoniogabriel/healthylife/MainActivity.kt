@@ -13,12 +13,14 @@ class MainActivity : AppCompatActivity() {
 
         btnImc.setOnClickListener {
             startActivity(Intent(this@MainActivity, ImcinputActivity::class.java))
-            finish()
         }
 
         btnRcq.setOnClickListener {
             startActivity(Intent(this@MainActivity, RcqinputActivity::class.java))
-            finish()
+        }
+
+        btnSaiba.setOnClickListener {
+            startActivity(Intent(this@MainActivity, SaibaActivity::class.java))
         }
     }
 }

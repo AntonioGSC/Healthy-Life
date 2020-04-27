@@ -33,4 +33,35 @@
         app:layout_constraintTop_toBottomOf="@+id/wbvSite"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/ic_home_white_24dp" />
+
+    <EditText
+        android:id="@+id/edtPesquisa"
+        android:layout_width="106dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="13dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:hint="Pesquisa"
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnHome"
+        app:layout_constraintStart_toEndOf="@+id/btnPesquisar"
+        app:layout_constraintTop_toBottomOf="@+id/wbvSite" />
+
+    <ImageView
+        android:id="@+id/btnPesquisar"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/edtPesquisa"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/wbvSite"
+        app:srcCompat="@drawable/ic_search_white_24dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
