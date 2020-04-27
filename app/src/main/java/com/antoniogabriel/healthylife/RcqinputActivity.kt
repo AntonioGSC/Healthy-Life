@@ -19,7 +19,7 @@ class RcqinputActivity : AppCompatActivity() {
                 val cintura = edtCintura.text.toString().toFloat()
                 val quadril = edtQuadril.text.toString().toFloat()
                 val resultadoRcq = String.format("%.2f", cintura/quadril)
-                val transportResultRcq = "$resultadoRcq"
+                val transportResultRcq = " $resultadoRcq "
                 startActivity(Intent(this@RcqinputActivity, RcqresultActivity::class.java).apply{
                     putExtra("resultadoRcq", transportResultRcq)
                 })

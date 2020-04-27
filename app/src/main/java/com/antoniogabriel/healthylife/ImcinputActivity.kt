@@ -18,7 +18,7 @@ class ImcinputActivity : AppCompatActivity() {
                 val peso = edtPeso.text.toString().toFloat()
                 val altura = edtAlt.text.toString().toFloat()
                 val resultado = String.format("%.2f", peso/(altura * altura))
-                val transportresult = "$resultado"
+                val transportresult = " $resultado "
                 startActivity(Intent(this@ImcinputActivity, ImcresultActivity::class.java).apply{
                     putExtra("resultado", transportresult)
                 })
